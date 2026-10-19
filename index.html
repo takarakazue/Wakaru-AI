@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#425B4A">
+  <meta name="description" content="Pesquisa acadêmica Wakaru AI sobre a experiência de residentes no Japão ao compreender documentos em japonês.">
+  <title>Wakaru AI · Pesquisa acadêmica</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#pesquisa">Pular para a pesquisa</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Wakaru AI — início"><img src="assets/logo.svg" width="42" height="48" alt=""><span>wakaru <span class="brand-ai">AI</span></span></a>
+    <nav aria-label="Navegação principal"><a href="#sobre">Sobre a pesquisa</a><a href="#privacidade">Privacidade <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <div class="survey-layout wrap">
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> PESQUISA ACADÊMICA</p>
+        <h1 id="intro-title">Entender um <br>documento muda <br>o seu <em>dia.</em></h1>
+        <p class="intro-copy">Morar no Japão traz muitas descobertas.<br class="desktop-break"> A papelada nem sempre é uma delas.</p>
+        <p class="intro-description">Queremos entender como você lida com documentos em japonês — e o que torna essa experiência difícil.</p>
+        <div class="facts"><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg>Cerca de 3 minutos</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Sem nome ou e-mail</span></div>
+        <div class="illustration" aria-hidden="true">
+          <svg viewBox="0 0 430 240" fill="none">
+            <circle cx="206" cy="124" r="103" fill="#E9EBDD"/>
+            <path d="M47 208H385" stroke="#C4CEBC"/>
+            <g transform="rotate(-10 208 120)"><rect x="120" y="32" width="149" height="177" rx="9" fill="#D9C7AC"/><rect x="132" y="22" width="149" height="177" rx="9" fill="#FFFCF5" stroke="#849B83"/>
+            <path d="M153 54h49m-49 22h103m-103 17h89m-89 17h96m-96 17h60" stroke="#AAB7A2" stroke-width="5" stroke-linecap="round"/><path d="M246 141c-37-4-54 8-49 37 31 2 49-10 49-37Z" fill="#425B4A"/><path d="m190 185 43-32" stroke="#849B83" stroke-width="2" stroke-linecap="round"/></g>
+            <circle cx="302" cy="72" r="24" fill="#425B4A"/><path d="m293 72 6 6 12-13" stroke="#F6F2E9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M83 160c10-18 10-36-2-51-11 20-11 37 2 51Zm0 0c-17-4-27-16-28-33 19 5 29 16 28 33Z" fill="#849B83"/><path d="M83 159v48" stroke="#849B83" stroke-width="2"/>
+            <path d="m325 167 4-8 4 8 8 4-8 4-4 8-4-8-8-4Z" fill="#B8A589"/>
+          </svg>
+          <span>Mais clareza. Mais autonomia.</span>
+        </div>
+      </section>
+
+      <section id="pesquisa" class="survey-card" aria-labelledby="survey-title">
+        <div class="card-top"><span>SUA EXPERIÊNCIA IMPORTA</span><span aria-hidden="true">↗</span></div>
+        <div class="card-body">
+          <div id="form-content">
+            <div class="step-meta"><p id="step-label">Etapa 1 de 4 · Começo</p><span id="step-count" aria-hidden="true">01 / 04</span></div>
+            <div class="progress-track" role="progressbar" aria-label="Progresso da pesquisa" aria-valuemin="0" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Etapa 1 de 4"><span id="progress-fill"></span></div>
+            <h2 id="survey-title" tabindex="-1">Primeiro, vamos nos conhecer.</h2>
+            <p id="step-description" class="step-description">Esta pesquisa é para quem mora no Japão. Não há respostas certas ou erradas.</p>
+            <p class="required-note">Campos com <span aria-hidden="true">*</span> são obrigatórios.</p>
+            <noscript><p class="notice">Ative o JavaScript para responder à pesquisa. Nenhuma resposta foi enviada.</p></noscript>
+            <form id="survey-form" novalidate>
+              <div class="step" data-step="0">
+                <fieldset><legend><span class="question-number">01</span> Você reside atualmente no Japão? <span class="required">*</span></legend>
+                  <label class="choice"><input type="radio" name="residencia" value="sim" required><span>Sim, moro no Japão</span><span class="radio-art" aria-hidden="true"></span></label>
+                  <label class="choice"><input type="radio" name="residencia" value="nao" required><span>Não moro no Japão</span><span class="radio-art" aria-hidden="true"></span></label>
+                  <p class="field-error" id="error-residencia" hidden></p>
+                </fieldset>
+                <p class="small-note">A participação é voluntária. Você pode sair antes de enviar, sem que suas respostas sejam salvas.</p>
+              </div>
+              <div class="step" data-step="1" hidden>
+                <fieldset><legend><span class="question-number">02</span> Como você descreve seu nível de japonês? <span class="required">*</span></legend>
+                  <div id="japones-options"></div><p class="field-error" id="error-japones" hidden></p>
+                </fieldset>
+                <fieldset><legend><span class="question-number">03</span> Como você costuma compreender documentos em japonês? <span class="required">*</span></legend><p class="field-hint" id="ajuda-hint">Pode selecionar mais de uma opção.</p>
+                  <div id="compreensao-options"></div><p class="field-error" id="error-compreensao" hidden></p>
+                </fieldset>
+              </div>
+              <div class="step" data-step="2" hidden>
+                <fieldset><legend><span class="question-number">04</span> Nos últimos 6 meses, com que frequência você teve dificuldade para compreender documentos em japonês? <span class="required">*</span></legend>
+                  <div id="frequencia-options"></div><p class="field-error" id="error-frequencia" hidden></p>
+                </fieldset>
+                <fieldset><legend><span class="question-number">05</span> Qual foi a principal consequência dessa dificuldade? <span class="required">*</span></legend><p class="field-hint">Escolha a que mais representa sua experiência nos últimos 6 meses.</p>
+                  <div id="consequencia-options"></div><p class="field-error" id="error-consequencia" hidden></p>
+                </fieldset>
+              </div>
+              <div class="step" data-step="3" hidden>
+                <fieldset><legend><span class="question-number">06</span> Quer contar uma situação que viveu? <span class="optional">Opcional</span></legend>
+                  <label class="sr-only" for="relato">Seu relato, sem dados pessoais</label><p id="relato-hint" class="field-hint">Conte apenas sobre a dificuldade. Não inclua nomes, contatos, endereço, números de documentos ou informações que identifiquem você ou outra pessoa.</p>
+                  <textarea id="relato" name="relato" rows="5" maxlength="1200" aria-describedby="relato-hint relato-count" placeholder="Por exemplo: tive dificuldade para entender uma orientação da prefeitura…"></textarea>
+                  <p id="relato-count" class="char-count">0 / 1.200 caracteres</p><p id="error-relato" class="field-error" hidden></p>
+                </fieldset>
+                <details class="review"><summary>Revisar minhas respostas</summary><dl id="review-list"></dl><p>Use “Voltar” para corrigir suas respostas antes do envio.</p></details>
+                <div class="consent-box"><label class="consent"><input type="checkbox" id="consentimento" name="consentimento" required><span>Li as informações de <a href="#privacidade">privacidade</a> e concordo voluntariamente com o uso das minhas respostas nesta pesquisa acadêmica. <span class="required">*</span></span></label><p id="error-consentimento" class="field-error" hidden></p></div>
+              </div>
+              <p id="form-status" class="notice" role="status" aria-live="polite" hidden></p>
+              <div class="form-actions"><button id="back-button" class="button button-secondary" type="button" hidden>← Voltar</button><button id="next-button" class="button button-primary" type="submit" disabled>Continuar <span aria-hidden="true">→</span></button></div>
+            </form>
+            <p class="card-footnote"><span aria-hidden="true">◇</span> Sua vivência ajuda a fazer as perguntas certas.</p>
+          </div>
+          <div id="ineligible" class="result" hidden><span class="result-icon" aria-hidden="true">↗</span><p class="eyebrow">OBRIGADO PELO INTERESSE</p><h2 tabindex="-1">Esta etapa é para residentes no Japão.</h2><p>Como o estudo se concentra na experiência de quem mora no país, sua participação termina aqui. Nenhuma resposta foi enviada ou salva.</p><button id="correct-residency" class="button button-secondary" type="button">Corrigir minha resposta</button></div>
+          <div id="success" class="result" hidden><span class="result-icon" aria-hidden="true">✓</span><p class="eyebrow">PARTICIPAÇÃO CONCLUÍDA</p><h2 tabindex="-1">Sua experiência faz diferença.</h2><p>Suas respostas foram registradas. Obrigado por contribuir para a pesquisa acadêmica Wakaru AI.</p><p class="small-note">Você já pode fechar esta página.</p><a class="text-link" href="#sobre">Conheça o objetivo da pesquisa <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="about-section wrap" id="sobre" aria-labelledby="about-title"><div><p class="eyebrow">O PONTO DE PARTIDA</p><h2 id="about-title">Antes de criar, <br>precisamos ouvir.</h2></div><div><p>A Wakaru AI é uma proposta de projeto acadêmico voltada à compreensão de documentos em japonês. Esta pesquisa busca conhecer as dificuldades de residentes no Japão e orientar a validação da ideia.</p><p>Você não precisa ter usado inteligência artificial para participar. Queremos conhecer sua experiência atual, inclusive se você não encontra dificuldades.</p><p class="small-note">Esta pesquisa não oferece tradução, atendimento ou orientação sobre documentos.</p></div></section>
+
+    <section id="privacidade" class="privacy-section wrap" aria-labelledby="privacy-title"><div><p class="eyebrow">COM RESPEITO À SUA EXPERIÊNCIA</p><h2 id="privacy-title">Privacidade e participação</h2></div><div class="privacy-grid"><div><h3>O que registramos</h3><p>Somente as respostas, o consentimento, a versão do questionário, a data do envio e um código aleatório para evitar duplicações. Não solicitamos nome, e-mail, telefone, endereço ou login.</p></div><div><h3>Como serão usadas</h3><p>As respostas serão armazenadas em uma planilha privada do Google Sheets e usadas pela equipe responsável para análise acadêmica. A apresentação dos resultados deve ser agregada, sem identificação de participantes.</p></div><div><h3>Sua escolha, do início ao fim</h3><p>Você pode deixar o relato em branco ou sair antes do envio. Como não pedimos sua identificação, pode não ser possível localizar uma resposta para excluí-la depois de enviada.</p></div><div><h3>Cuidados com os dados</h3><p>Não inclua dados pessoais no relato. Este site não usa cookies de análise ou publicidade. GitHub e Google podem processar dados técnicos de conexão conforme suas próprias políticas.</p></div></div><p id="research-contact" class="research-contact" hidden></p></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="./" aria-label="Wakaru AI — início"><img src="assets/logo.svg" width="29" height="34" alt=""><span>wakaru <span class="brand-ai">AI</span></span></a><p>Compreender para viver com mais autonomia.</p><span>Projeto acadêmico · Pesquisa em português</span></footer>
+  <iframe name="wakaru-response" id="response-frame" title="Canal técnico de confirmação do envio" hidden></iframe>
+</body>
+</html>
