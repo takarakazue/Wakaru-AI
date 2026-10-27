@@ -8,11 +8,25 @@
 
 *Estudo de caso de Product Discovery · UniFECAF · Outubro de 2026*
 
-[**Conhecer o questionário**](https://takarakazue.github.io/Wakaru-AI/) · [**Explorar o protótipo**](https://takarakazue.github.io/Wakaru-AI/prototipo/) · [**Repositório**](https://github.com/takarakazue/Wakaru-AI)
+[**Questionário**](https://takarakazue.github.io/Wakaru-AI/) · [**Protótipo**](https://takarakazue.github.io/Wakaru-AI/prototipo/) · [**Dados da pesquisa**](https://docs.google.com/spreadsheets/d/15A0mJKgv_OSjRhyikLOpGxiFSCWlfX533k96pZszIQw/edit?usp=sharing) · [**Vídeo**](https://drive.google.com/file/d/1_5QNzt7FxHL4fFXy5_cqoshWfDji-5Of/view)
 
 </div>
 
 > **Estado do projeto: AJUSTAR.** A pesquisa encontrou indícios de um problema real e de seu impacto, mas a eficácia e a vantagem comparativa da solução **ainda não foram demonstradas**. O protótipo publicado é uma demonstração estática, **sem tradução por IA em funcionamento**.
+
+---
+
+## O projeto em 30 segundos
+
+O **Wakaru AI** é uma proposta de solução **multilíngue** para apoiar estrangeiros residentes no Japão a compreender documentos japoneses, destacando **o que o documento informa, o que fazer, até quando e quando confirmar a informação em uma fonte oficial**.
+
+A primeira pesquisa foi realizada em português com brasileiros residentes no Japão. A expansão para vietnamita, chinês e outros idiomas é uma **visão futura**, ainda não validada nesta pesquisa.
+
+| **9 respostas reais** | **7/9 com dificuldade ao menos ocasional** | **7/9 com consequência relatada** | **6 receberam o protótipo** | **5 declararam interesse** |
+|:--:|:--:|:--:|:--:|:--:|
+| Pesquisa exploratória | H1: abaixo da meta | H2: meta atingida | Teste exploratório | Intenção, não adoção |
+
+[**Explorar o protótipo demonstrativo →**](https://takarakazue.github.io/Wakaru-AI/prototipo/)
 
 ---
 
