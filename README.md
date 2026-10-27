@@ -214,6 +214,16 @@ A IA **não foi utilizada para simular respondentes** nem para inventar feedback
 
 ---
 
+## Apresentação final — 27/10/2026
+
+A apresentação em vídeo do estudo de caso foi gravada e revisada para a entrega acadêmica, com **duração de 3min58s** (limite de 4 minutos). O vídeo mostra o problema, a solução/MVP demonstrativo, a pesquisa, as evidências de participantes, o protótipo e a decisão **AJUSTAR**.
+
+**[Assistir à apresentação no Google Drive](https://drive.google.com/file/d/1_5QNzt7FxHL4fFXy5_cqoshWfDji-5Of/view)** — acesso sujeito às permissões do arquivo.
+
+O vídeo registra os **dois ciclos exploratórios realizados**; o terceiro ciclo permanece **planejado, não executado**. A gravação não constitui evidência adicional de validação do produto, mas apresenta as evidências já coletadas.
+
+---
+
 ## Acessar o projeto e as evidências
 
 | Recurso | Link | Observação |
